@@ -1,6 +1,6 @@
 # Kotlin na prática
 
-Este repositório contem os códigos utilizados no link Kotlin na prática. Você pode encontrar o link em: casadocodigo.com.br
+Este repositório contem os códigos utilizados no link Kotlin na prática. Você pode encontrar o link em: http://casadocodigo.com.br
 
 
 ## Projeto - Hello World
