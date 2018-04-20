@@ -24,4 +24,13 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_login)
 
     }
+
+
+    fun teste( f.()-> Unit ){
+
+
+
+    }
+
+
 }
