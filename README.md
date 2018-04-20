@@ -12,6 +12,7 @@ O projeto Hello World é o primeiro contato com a programação em Kotlin e a pl
 
 Este é de fato o promeiro projeto do livro, aqui o leitor irá desenvolver um aplicativo que calcule quanto tempo falta para uma pessoa se aposentar de acordo com as regras vigentes. Para isso o App deve levar em conta a idade atual e o sexo da pessoa. Neste projeto o leitor aprenderá os principais componentes visuais do Android como `TextView`, `EditText`, `Button` e `Spinner`, também aprenderá como definir ações para um botão e como dar um feedback visual ao usuário.
 
+![Calculadora Aposentadoria](img/calculadora_aposentadoria.png)
 
 
 ## Projeto - Lista de Compras 
@@ -22,7 +23,7 @@ Na segunda parte o leitor irá implementar uma `ListView` customizada ao aplicat
 
 Na terceira parte desse App o leitor irá trabalhar com o banco de dados sqlite e com a biblioteca Anko para fazer a persistencia dos dados, o leitor irá implementar as operações básicas de uma banco de dados.
 
-
+![Lista de compras](img/lista_compras.png)
 
 ## Projeto - Calculadora de Bitcoin
 
@@ -30,6 +31,8 @@ Neste projeto o leitor irá implementar um App de calculadora de Bitcoin! Esse A
 
 Aqui o leitor irá aprender a trablahar com tarefas assincronas e como executar requisições simples a uma API na internet, também aprenderá a tratar o retorno de APIs em JSON através da linguagem Kotlin.
 
+
+![Calculadora de bitcoin](img/calculadora_bitcoin.png)
 
 
 
