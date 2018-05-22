@@ -2,33 +2,33 @@ package br.com.livrokotlin.exemplos
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Button
-import android.widget.TextView
+import android.widget.ArrayAdapter
+import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
-        //Criando um objeto de texto
-        val texto = TextView(this)
-        texto.text = "Hello Kotlin"
-
-
-        //definindo o conteudo da tela
         setContentView( R.layout.activity_main )
 
+        val exemplos = listOf<String>("Notificações", "Permissões", "Geo Localização")
+
+        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, exemplos)
+
+        list_view.adapter = adapter
 
 
-        findViewById<Button>(R.id.btn_login)
-
-    }
+        list_view.setOnItemClickListener { adapterView, view, i, l ->
 
 
-    fun teste( f.()-> Unit ){
+            when(i){
+                0 -> startActivity<NotificacoesActivity>()
+                1 -> startActivity<PermissoesActivity>()
+                2 -> startActivity<GeoLocalizacaoActivity>()
+            }
 
-
+        }
 
     }
 

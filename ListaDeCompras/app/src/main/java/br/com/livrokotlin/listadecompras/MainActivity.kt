@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.*
 import org.jetbrains.anko.db.delete
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Implementação do adaptador
-        //val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1)
+        val adapter2 = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1)
 
 
 

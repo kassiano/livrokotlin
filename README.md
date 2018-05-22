@@ -36,6 +36,9 @@ Aqui o leitor irá aprender a trablahar com tarefas assincronas e como executar 
 
 
 
+## Notificações, permissões, localização e publicação
+
+
 
 
 

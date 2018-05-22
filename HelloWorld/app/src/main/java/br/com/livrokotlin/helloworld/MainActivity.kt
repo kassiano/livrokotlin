@@ -1,7 +1,7 @@
 package br.com.livrokotlin.helloworld
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val c = Carro()
 
-        c.teste = "ola"
+        //c.teste = "ola"
 
     }
 }
