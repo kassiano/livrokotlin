@@ -36,7 +36,11 @@ Aqui o leitor irá aprender a trablahar com tarefas assincronas e como executar 
 
 
 
-## Notificações, permissões, localização e publicação
+## Exemplos: Notificações, permissões e localização
+
+Dentro do projeto "Exemplos" você encontrará exemplos de impelmentação dessas 3 funcionalidades: Notificação, Requisição de permissões e requisição de localização. Todos os exemplos utilizam os códigos descritos no livro.
+
+![Projeto de exemplos](img/exemplos.png)
 
 
 
