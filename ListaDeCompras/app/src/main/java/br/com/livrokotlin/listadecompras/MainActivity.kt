@@ -1,6 +1,5 @@
 package br.com.livrokotlin.listadecompras
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -107,7 +106,10 @@ class MainActivity : AppCompatActivity() {
             startActivity<CadastroActivity>()
 
 
-            val intent = Intent(this, CadastroActivity::class.java)
+
+            //val intent = Intent(this, CadastroActivity::class.java)
+            //startActivity(intent)
+
         }
 
     }
@@ -139,7 +141,7 @@ class MainActivity : AppCompatActivity() {
 
                 val parser = rowParser {
 
-                    id: Int, nomeProduto: String,
+                    id: Int, nome: String,
                     quantidade: Int,
                     valor:Double,
                     foto:ByteArray? ->
@@ -147,18 +149,18 @@ class MainActivity : AppCompatActivity() {
 
 
                     //Montagem do objeto Produto com as colunas do banco
-                    Produto(id, nomeProduto, quantidade, valor, foto?.toBitmap() )
+                    Produto(id, nome, quantidade, valor, foto?.toBitmap() )
                 }
 
 
-                var lstProdutos = parseList(parser)
+                var listaProdutos = parseList(parser)
 
 
                 adapter.clear()
-                adapter.addAll(lstProdutos)
+                adapter.addAll(listaProdutos)
 
 
-                val soma = lstProdutos.sumByDouble { it.valor * it.quantidade }
+                val soma = listaProdutos.sumByDouble { it.valor * it.quantidade }
 
                 val f = NumberFormat.getCurrencyInstance(Locale("pt", "br"))
                 txt_total.text = "TOTAL: ${ f.format(soma)}"

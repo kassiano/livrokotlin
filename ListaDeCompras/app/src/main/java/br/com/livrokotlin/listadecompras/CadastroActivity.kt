@@ -23,7 +23,6 @@ class CadastroActivity : AppCompatActivity() {
         //definição do ouvinte do botão
         btn_inserir.setOnClickListener {
 
-
             //pegando o valor digitado pelo usuario
             val produto = txt_produto.text.toString()
             val qtd = txt_qtd.text.toString()

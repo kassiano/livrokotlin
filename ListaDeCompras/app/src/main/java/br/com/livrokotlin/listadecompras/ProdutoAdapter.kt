@@ -1,6 +1,7 @@
 package br.com.livrokotlin.listadecompras
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,7 +24,8 @@ class ProdutoAdapter(contexto: Context) : ArrayAdapter<Produto>(contexto,0) {
         if(convertView != null){
             v = convertView
         }else{
-            v = LayoutInflater.from(context).inflate(R.layout.list_view_item, null)
+            Log.d("parent", parent?.toString())
+            v = LayoutInflater.from(context).inflate(R.layout.list_view_item, parent, false)
         }
 
 
@@ -35,7 +37,7 @@ class ProdutoAdapter(contexto: Context) : ArrayAdapter<Produto>(contexto,0) {
         val img_produto = v.findViewById<ImageView>(R.id.img_item_foto)
 
         txt_qtd.text = item.quantidade.toString()
-        txt_produto.text = item.nomeProduto
+        txt_produto.text = item.nome
 
         //obtendo a instancia do objeto de formatação
         val f = NumberFormat.getCurrencyInstance(Locale("pt", "br"))

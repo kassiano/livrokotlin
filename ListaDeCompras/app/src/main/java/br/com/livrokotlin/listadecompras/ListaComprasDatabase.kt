@@ -33,7 +33,7 @@ class ListaComprasDatabase(context: Context) : ManagedSQLiteOpenHelper(ctx = con
 
         db.createTable("produtos", true,
                 "id" to INTEGER + PRIMARY_KEY + UNIQUE,
-                "nomeProduto" to TEXT,
+                "nome" to TEXT,
                 "quantidade" to INTEGER,
                 "valor" to REAL,
                 "foto" to BLOB

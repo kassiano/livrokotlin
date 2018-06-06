@@ -15,12 +15,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_valor"
-        android:hint="Ex: 45,00" />
+        android:inputType="numberDecimal"
+        android:hint="Ex: 45,00"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_calcular"
-        android:text="calcular" />
+        android:text="calcular"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/branco"
+        />
 
 </LinearLayout>
