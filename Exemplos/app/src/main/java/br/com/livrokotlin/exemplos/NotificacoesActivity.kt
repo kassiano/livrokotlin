@@ -1,6 +1,5 @@
 package br.com.livrokotlin.exemplos
 
-import android.annotation.TargetApi
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
@@ -18,7 +17,7 @@ class NotificacoesActivity : AppCompatActivity() {
 
         btn_notificacao.setOnClickListener {
 
-            notificacaoSimples("Teste", "Esta é uma notificacao teste")
+            notificacaoSimples("Título", "Olá, você está sendo notificado")
         }
     }
 

@@ -16,7 +16,7 @@
         android:id="@+id/txt_cotacao"
         android:text="R$ 0,00"
         android:textStyle="bold"
-        android:textSize="21sp"
+
         />
 
 </LinearLayout>

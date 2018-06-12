@@ -19,7 +19,7 @@
         android:layout_marginTop="10dp"
         android:id="@+id/txt_qtd_bitcoins"
         android:text="0.00000000"
-        android:textSize="21sp"
+
         />
 
 </LinearLayout>

@@ -19,42 +19,26 @@ class GeoLocalizacaoActivity : AppCompatActivity() {
 
     val ID_REQUISICAO_FINE_LOCATION = 101;
 
-    val locationListener = object : LocationListener {
+    lateinit var locationListener:LocationListener
+
+    class MyLocationListener : LocationListener{
 
         override fun onLocationChanged(location: Location?) {
-
-            //Esse método será acionado quando a localização for encontrada ou sofrer alguma movimentação
-            txt_lat_long.text = "Latitude: ${location?.latitude} Longitude: ${location?.longitude}"
-
         }
 
         override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {
 
-
-            /*Esse método será acionado quando o status do provedor de localização for atualizado
-            Os status possiveis são:
-
-            LocationProvider.AVAILABLE  - > Disponivel
-            LocationProvider.OUT_OF_SERVICE -> Fora de serviço
-            LocationProvider.TEMPORARILY_UNAVAILABLE -> Temporariamente indisponível
-            */
-
-            Log.d("locationListener", "LocationProvider STATUS: $status" )
         }
 
         override fun onProviderDisabled(provider: String?) {
 
-            //Quando um provedor é desabilitado
-            Log.d("locationListener", "Provedor desabilitado: $provider" )
         }
 
         override fun onProviderEnabled(provider: String?) {
 
-            //Quando um provedor é habilitado
-            Log.d("locationListener", "Provedor habilitado: $provider" )
-
         }
     }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +52,7 @@ class GeoLocalizacaoActivity : AppCompatActivity() {
           val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
         */
 
+        locationListener = MyLocationListener()
 
         btn_localizacao.setOnClickListener {
 

@@ -24,8 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_calcular"
         android:text="calcular"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/branco"
+
         />
 
 </LinearLayout>

@@ -79,9 +79,9 @@ class MainActivity : AppCompatActivity() {
 
 
         //calculando o resultado
-        //caso o valor digitado seja maior que zero, efetuamos o calculo
+        //caso o valor cotacão seja maior que zero, efetuamos o calculo
         //caso contrario devolvemos 0
-        val resultado = if(valor_digitado > 0) valor_digitado / cotacaoBitcoin else 0.0
+        val resultado =   if(cotacaoBitcoin > 0) valor_digitado / cotacaoBitcoin else 0.0
 
 
         //atualizando a TextView com o resultado formatado com 8 casas decimais
