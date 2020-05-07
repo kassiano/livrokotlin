@@ -36,7 +36,7 @@ class CadastroActivity : AppCompatActivity() {
                 database.use{
 
                     val idProduto = insert("Produtos",
-                            "nomeProduto" to produto,
+                            "nome" to produto,
                             "quantidade" to qtd,
                             "valor" to valor.toDouble(),
                             "foto" to imageBitMap?.toByteArray()

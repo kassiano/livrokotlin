@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ListaDeCompras.iml" filepath="$PROJECT_DIR$/ListaDeCompras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ListaDeCompras-app.iml" filepath="$PROJECT_DIR$/app/ListaDeCompras-app.iml" group="ListaDeCompras/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livrokotlin-ListaDeCompras.iml" filepath="$PROJECT_DIR$/livrokotlin-ListaDeCompras.iml" group="ListaDeCompras" />
     </modules>
   </component>
 </project>
